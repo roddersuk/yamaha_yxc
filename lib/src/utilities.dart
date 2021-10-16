@@ -23,15 +23,15 @@ class Core {
       host: Uri.parse(baseUrl).host,
       port: kPort,
       pathSegments: ['YamahaExtendedControl', version, section, function],
-      queryParameters: queryParameters,
+      queryParameters: (queryParameters.isNotEmpty) ? queryParameters : null,
     );
-    // print('yxc: URI=${uri.toString()}');
+    //print('yxc: URI=${uri.toString()}');
     http.Response response = await http.get(uri);
     if (response.statusCode == 200) {
       var json = jsonDecode(response.body);
       if (json['response_code'] != 0)
         throw Exception(
-            "Request failed: ${kResponseCode[json['response_code']]}");
+            "Request failed: ${kResponseCode[json['response_code']]} URI=${uri.toString()}");
       return json;
     } else {
       throw Exception('Request error: ${response.statusCode}');

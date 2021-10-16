@@ -3,7 +3,7 @@ import 'src/utilities.dart';
 
 class Zone {
   Future getStatus({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
   }) async =>
       Core.call(
         section: kZone,
@@ -14,7 +14,7 @@ class Zone {
       );
 
   Future getSoundProgramList({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
   }) async =>
       Core.call(
         section: kZone,
@@ -26,7 +26,7 @@ class Zone {
 
   Future setPower({
     required PowerStatus power,
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
   }) async =>
       Core.call(
         section: kZone,
@@ -38,7 +38,7 @@ class Zone {
       );
 
   Future setSleep({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int sleep,
   }) async =>
       Core.call(
@@ -51,7 +51,7 @@ class Zone {
       );
 
   Future setVolume({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int volume,
     int? step,
   }) async =>
@@ -66,7 +66,7 @@ class Zone {
       );
 
   Future setMute({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -79,7 +79,7 @@ class Zone {
       );
 
   Future setInput({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String input,
     String? mode,
   }) async =>
@@ -94,7 +94,7 @@ class Zone {
       );
 
   Future setSoundProgram({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String program,
   }) async =>
       Core.call(
@@ -107,7 +107,7 @@ class Zone {
       );
 
   Future set3dSurround({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -120,7 +120,7 @@ class Zone {
       );
 
   Future setDirect({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -133,7 +133,7 @@ class Zone {
       );
 
   Future setPureDirect({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -146,7 +146,7 @@ class Zone {
       );
 
   Future setEnhancer({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -159,7 +159,7 @@ class Zone {
       );
 
   Future setToneControl({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     String? mode,
     int? bass,
     int? treble,
@@ -176,7 +176,7 @@ class Zone {
       );
 
   Future setEqualizer({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     String? mode,
     int? low,
     int? mid,
@@ -195,7 +195,7 @@ class Zone {
       );
 
   Future setBalance({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int value,
   }) async =>
       Core.call(
@@ -208,7 +208,7 @@ class Zone {
       );
 
   Future setDialogueLevel({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int value,
   }) async =>
       Core.call(
@@ -221,7 +221,7 @@ class Zone {
       );
 
   Future setDialogueLift({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int value,
   }) async =>
       Core.call(
@@ -234,7 +234,7 @@ class Zone {
       );
 
   Future setClearVoice({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -247,7 +247,7 @@ class Zone {
       );
 
   Future setSubwooferVolume({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int volume,
   }) async =>
       Core.call(
@@ -260,7 +260,7 @@ class Zone {
       );
 
   Future setBassExtension({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -273,7 +273,7 @@ class Zone {
       );
 
   Future getSignalInfo({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
   }) async =>
       Core.call(
         section: kZone,
@@ -284,7 +284,7 @@ class Zone {
       );
 
   Future prepareInputChange({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String input,
   }) async =>
       Core.call(
@@ -297,7 +297,7 @@ class Zone {
       );
 
   Future recallScene({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required int num,
   }) async =>
       Core.call(
@@ -310,7 +310,7 @@ class Zone {
       );
 
   Future setContentsDisplay({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required bool enable,
   }) async =>
       Core.call(
@@ -323,7 +323,7 @@ class Zone {
       );
 
   Future controlCursor({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String cursor,
   }) async =>
       Core.call(
@@ -336,7 +336,7 @@ class Zone {
       );
 
   Future controlMenu({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String menu,
   }) async =>
       Core.call(
@@ -349,7 +349,7 @@ class Zone {
       );
 
   Future setActualVolume({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String mode,
     required double value,
   }) async =>
@@ -364,7 +364,7 @@ class Zone {
       );
 
   Future setAudioSelect({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String type,
   }) async =>
       Core.call(
@@ -377,7 +377,7 @@ class Zone {
       );
 
   Future setSurroundDecoderType({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String type,
   }) async =>
       Core.call(
@@ -391,7 +391,7 @@ class Zone {
 
 // Advanced
   Future setLinkControl({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String control,
   }) async =>
       Core.call(
@@ -404,7 +404,7 @@ class Zone {
       );
 
   Future setLinkAudioDelay({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String delay,
   }) async =>
       Core.call(
@@ -417,7 +417,7 @@ class Zone {
       );
 
   Future setLinkAudioQuality({
-    required ZoneType zone,
+    ZoneType zone = ZoneType.main,
     required String mode,
   }) async =>
       Core.call(
