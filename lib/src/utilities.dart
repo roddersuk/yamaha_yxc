@@ -1,7 +1,9 @@
-import 'dart:convert';
-
-import '../constants.dart';
-import 'package:http/http.dart' as http;
+part of yamaha_yxc;
+//
+// import 'dart:convert';
+//
+// import '../constants.dart';
+// import 'package:http/http.dart' as http;
 
 class Core {
   //Core(this.baseUrl);

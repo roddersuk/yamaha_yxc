@@ -1,3 +1,5 @@
+part of yamaha_yxc;
+
 const String kSystem = 'system';
 const String kNetwork = 'netusb';
 const String kZone = 'main';

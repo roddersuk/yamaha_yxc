@@ -1,15 +1,22 @@
+/// Provide access to the Yamaha Extended Control API to
+/// give control over Musiccast devices.
+/// Refer to https://wiki.elvis.science/index.php?title=File:Yamaha_Extended_Control_API_Specification_(Basic).pdf
+/// and https://wiki.elvis.science/index.php?title=File:Yamaha_Extended_Control_API_Specification_(Basic).pdf for details
 library yamaha_yxc;
 
-import 'package:yamaha_yxc/cd.dart';
-import 'package:yamaha_yxc/clock.dart';
-import 'package:yamaha_yxc/distribution.dart';
-import 'package:yamaha_yxc/network.dart';
-import 'package:yamaha_yxc/system.dart';
-import 'package:yamaha_yxc/tuner.dart';
-import 'package:yamaha_yxc/zone.dart';
+import 'dart:math';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 
-export 'constants.dart';
-import 'src/utilities.dart';
+part 'cd.dart';
+part 'clock.dart';
+part 'distribution.dart';
+part 'network.dart';
+part 'system.dart';
+part 'tuner.dart';
+part 'zone.dart';
+part 'constants.dart';
+part 'src/utilities.dart';
 
 class YamahaYXC {
   System system = System();

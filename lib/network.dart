@@ -1,7 +1,9 @@
-import 'dart:math';
+part of yamaha_yxc;
 
-import 'constants.dart';
-import 'src/utilities.dart';
+// import 'dart:math';
+//
+// import 'constants.dart';
+// import 'src/utilities.dart';
 
 class Network {
   Future getPresetInfo() async => Core.call(

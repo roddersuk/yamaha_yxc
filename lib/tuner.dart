@@ -1,5 +1,6 @@
-import 'constants.dart';
-import 'src/utilities.dart';
+part of yamaha_yxc;
+// import 'constants.dart';
+// import 'src/utilities.dart';
 
 class Tuner {
   Future getPresetInfo({

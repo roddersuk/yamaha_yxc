@@ -1,5 +1,6 @@
-import 'src/utilities.dart';
-import 'constants.dart';
+part of yamaha_yxc;
+// import 'src/utilities.dart';
+// import 'constants.dart';
 
 class Clock {
   Future getSettings() async => Core.call(

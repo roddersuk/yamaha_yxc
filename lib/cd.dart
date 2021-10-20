@@ -1,7 +1,9 @@
-import 'package:yamaha_yxc/yamaha_yxc.dart';
+part of yamaha_yxc;
 
-import 'constants.dart';
-import 'src/utilities.dart';
+// import 'package:yamaha_yxc/yamaha_yxc.dart';
+//
+// import 'constants.dart';
+// import 'src/utilities.dart';
 
 class CD {
   Future getPlayInfo() async => Core.call(

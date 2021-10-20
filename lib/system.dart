@@ -1,5 +1,7 @@
-import 'constants.dart';
-import 'src/utilities.dart';
+part of yamaha_yxc;
+
+// import 'constants.dart';
+// import 'src/utilities.dart';
 
 class System {
   Future getDeviceInfo() async => Core.call(
