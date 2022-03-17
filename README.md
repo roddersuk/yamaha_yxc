@@ -2,13 +2,7 @@
 
 Yamaha MusicCast Extended Control API
 
-## Getting Started
+Dart based api to Musiccast
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Yamaha Extended Control API (Basic): https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi_o5aV4sz2AhXMilwKHQe6CJcQFnoECAkQAQ&url=https%3A%2F%2Fcommunity-openhab-org.s3-eu-central-1.amazonaws.com%2Foriginal%2F2X%2F9%2F931ea88e30cf0f05fcdee79816eb4d3f12dd4d70.pdf&usg=AOvVaw0fhNd8XOaDjSYBPZniicem
+Yamaha Extended Control API (Advanced): https://forum.smartapfel.de/attachment/4371-yxc-api-spec-advanced-pdf/

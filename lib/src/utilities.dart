@@ -27,9 +27,10 @@ class Core {
       pathSegments: ['YamahaExtendedControl', version, section, function],
       queryParameters: (queryParameters.isNotEmpty) ? queryParameters : null,
     );
-    //print('yxc: URI=${uri.toString()}');
+    print('yxc: URI=${uri.toString()}');
     http.Response response = await http.get(uri);
     if (response.statusCode == 200) {
+      print('yxc: Response,body=${response.body.toString()}');
       var json = jsonDecode(response.body);
       if (json['response_code'] != 0)
         throw Exception(
